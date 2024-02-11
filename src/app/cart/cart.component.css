@@ -1,0 +1,96 @@
+.card {
+    height: auto;
+    margin: 25px;
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.empty-cart {
+    text-align: center;
+}
+
+.empty-cart img {
+    max-width: 18%;
+    height: auto;
+    margin: 20px 0px;
+}
+
+.empty-cart .btn {
+    font-size: 16px !important;
+    margin-top: 20px !important;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 3px !important;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.empty-cart .btn:hover {
+    background-color: #0056b3;
+}
+
+.card-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+    overflow-x: auto;
+}
+
+/* Add custom class for small description */
+.description {
+    width: 15%;
+}
+
+/* Add custom class for small price */
+.price {
+    width: 8%;
+}
+
+/* Dropdown Styles */
+.description-dropdown {
+    position: relative;
+}
+
+.more-info {
+    cursor: pointer;
+    color: blue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+/* Add custom class for small images */
+.product-image {
+    max-width: 50px; /* Set the maximum width of the image */
+    height: auto; /* Allow the height to adjust automatically */
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: auto;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .empty-cart .btn {
+        padding: 10px 20px;
+    }
+}

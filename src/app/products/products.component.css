@@ -1,0 +1,43 @@
+.card {
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-img-top {
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    max-width: 200px; /* Set a maximum width for the images */
+    max-height: 150px; /* Set a maximum height for the images */
+    object-fit: cover; /* Maintain aspect ratio and fill container */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description-short {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn {
+    width: 100%;
+}
